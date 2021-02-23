@@ -4,27 +4,22 @@
     box-sizing: border-box;
 }
 
-/* img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
-} */
-
 body {
     font-family: 'Muli', sans-serif;
+    height: 100vh;
+}
+
+main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     overflow: hidden;
     margin: 0;
-    /* background: pink; */
 }
 
 .container {
     display: flex;
     width: 90vw;
-    /* height: 60vh; */
 }
 
 .panel {
@@ -70,4 +65,42 @@ body {
         display: none;
     }
 
+}
+
+/* Navigation breadCrumb */
+nav {
+    /* background-color: #333; */
+    color: #333;
+    overflow: auto;
+    border-bottom: 1px solid #333;
+    margin-bottom: 2rem;
+    /* display: flex; */
+}
+
+nav a {
+    color: #333;
+}
+
+nav a:hover {
+    font-weight: 700;
+}
+
+nav ol {
+    list-style: none;
+    float: left;
+}
+
+nav ol li {
+    float: left;
+    padding-left: 0.5rem;
+}
+
+nav ol li:not(:last-child)::after {
+    font-weight: bold;
+    color: navy;
+    content: " / ";
+}
+
+.clr {
+    clear: both;
 }
