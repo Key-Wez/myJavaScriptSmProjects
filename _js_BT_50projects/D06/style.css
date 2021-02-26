@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* :root {
+    --line-border-fill: #3498db;
+    --line-border-empty: #e0e0e0;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+
+main {
+    background-color: #f6f7fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+.container {
+    text-align: center;
+    z-index: 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------  Navigation breadCrumb ---------- */
+nav {
+    /* background-color: #333; */
+    color: #333;
+    overflow: auto;
+    border-bottom: 1px solid #333;
+    /* margin-bottom: 2rem; */
+}
+
+nav a {
+    color: #333;
+}
+
+nav a:hover {
+    font-weight: 700;
+}
+
+nav ol {
+    list-style: none;
+    float: left;
+}
+
+nav ol li {
+    float: left;
+    padding-left: 0.5rem;
+}
+
+nav ol li:not(:last-child)::after {
+    font-weight: bold;
+    color: navy;
+    content: " / ";
+}
+
+.clr {
+    clear: both;
+}
