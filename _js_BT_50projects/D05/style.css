@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
 * {
-    /* margin: 0;
-    padding: 0; */
     box-sizing: border-box;
 }
 
@@ -13,13 +11,71 @@
 } */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     height: 100vh;
     overflow: hidden;
     margin: 0;
-    /* background: pink; */
 }
+
+.bg {
+    background: url('https://images.unsplash.com/photo-1576161787924-01bb08dad4a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2104&q=80') no-repeat center center/cover;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(0px);
+}
+
+.loading-text {
+    font-size: 50px;
+    color: white;
+}
+
+
+/* ----------------  Navigation breadCrumb ---------- */
+nav {
+    opacity: 0;
+    color: #fff;
+    overflow: auto;
+    position: absolute;
+    top: 3rem;
+    transition: opacity 0.3s ease;
+}
+
+nav.visible {
+    opacity: 1;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav a:hover {
+    font-weight: 700;
+}
+
+nav ol {
+    list-style: none;
+    /* float: left; */
+}
+
+nav ol li {
+    float: left;
+    padding-left: 0.5rem;
+}
+
+nav ol li:not(:last-child)::after {
+    font-weight: bold;
+    color: #fff;
+    content: " / ";
+}
+
+/* .clr {
+    clear: both;
+} */
