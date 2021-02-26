@@ -62,3 +62,9 @@ main {
     display: flex;
     width: 90vw;
 }
+
+/* #ProjectList */
+a[href="#"] {
+    pointer-events: none;
+    color: #ccc;
+}

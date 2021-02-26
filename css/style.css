@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    /* --accent-color: darkred; */
+    --accent-color: rgb(128, 0, 128);
+    --pale-color: #d8d8eb;
+}
 
 * {
     margin: 0;
@@ -7,6 +14,160 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    /* background-color: #222; */
+    /* background-color: #fff; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+span {
+    color: var(--accent-color);
+}
+
+header#main-header {
+    height: 60vh;
+    background: url(../img/hivers.jpg) center center/cover;
+}
+
+#showcase {
+    height: 50vh;
+}
+
+#showcase p {
+    font-size: 1.2rem;
+    line-height: 0.6rem;
+    padding-bottom: 0;
+}
+
+#showcase h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+#showcase .line {
+    height: 0.625rem;
+    width: 5rem;
+    background-color: var(--accent-color);
+}
+
+#categories {
+    /* background-color: #efefef; */
+    padding-bottom: 4rem;
+}
+
+#dev-icons {
+    background-color: rgba(138, 43, 226, 0.4);
+    color: var(--pale-color);
+}
+
+
+#dev-icons a {
+    color: var(--accent-color);
+    color: var(--pale-color);
+    /* height: 10vh; */
+}
+
+#dev-icons a:hover {
+    color: var(--accent-color);
+
+}
+
+#dev-icons i {
+    margin: 2rem 2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+    transition: all 0.3s ease-in;
+
+}
+
+#dev-icons a:hover i {
+    /* background-color: var(--pale-color); */
+    box-shadow: 0px 0px 5px 5px rgba(138, 43, 226, 0.4);
+    transform: scale(1.06);
+}
+
+
+.cat-box {
+    height: 150px;
+}
+
+.cat-box:nth-of-type(odd) {
+    background-color: #999;
+}
+
+.cat-box:nth-of-type(even) {
+    background-color: #fafafa;
+}
+
+#ma-session {
+    height: 400px;
+    background-color: white;
+}
+
+a {
+    /* text-decoration: none; */
+}
+
+#Highlighted-projects {
+    background-color: var(--pale-color);
+    background-color: #fafafa;
+    padding: 3.5rem 0;
+}
+
+
+/* ----- test sur la page OC -----  */
+#OC {
+    height: 80vh;
+    background-color: var(--pale-color);
+}
+
+.icon-container {
+    background-color: rgba(138, 43, 226, 0.8);
+    height: 60%;
+    width: 60%;
+    border-radius: 25px;
+    padding: 2.5rem;
+}
+
+.subject {
+    transition: all 0.4s;
+}
+
+.subject:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px 5px rgba(138, 43, 226, 0.8);
+}
+
+
+/* Footer */
+footer {
+    color: #fff;
+    color: #333;
+}
+
+footer a {
+    color: #fff;
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    /* color: #ffc53a; */
+    color: var(--accent-color);
+}
+
+footer .myInfo h5 {
+    font-weight: 700;
+    /* padding-bottom: 0; */
+    margin-bottom: 0;
+}
+
+footer .myInfo p {
+    font-size: 0.8rem;
+}
+
+footer .links a {
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
 }
