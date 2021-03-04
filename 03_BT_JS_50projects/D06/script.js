@@ -3,7 +3,7 @@ const boxes = document.querySelectorAll('.box')
 window.addEventListener('scroll', checkBoxes)
 
 checkBoxes()
-//a enlever apres
+
 function checkBoxes(){
     const triggerBottom = window.innerHeight / 5 *4;
     boxes.forEach(box =>{
