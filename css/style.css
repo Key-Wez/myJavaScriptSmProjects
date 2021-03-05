@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
-    /* --accent-color: darkred; */
     --accent-color: rgb(128, 0, 128);
     --pale-color: #d8d8eb;
 }
@@ -14,7 +13,6 @@
 }
 
 body {
-    /* background-color: #fff; */
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -67,6 +65,7 @@ header#main-header {
 
 #dev-icons a:hover {
     color: var(--accent-color);
+    transform: scale(1.03);
 
 }
 
@@ -76,12 +75,6 @@ header#main-header {
     border-radius: 20px;
     transition: all 0.3s ease-in;
 
-}
-
-#dev-icons a:hover i {
-    /* background-color: var(--pale-color); */
-    box-shadow: 0px 0px 5px 5px rgba(138, 43, 226, 0.4);
-    transform: scale(1.06);
 }
 
 

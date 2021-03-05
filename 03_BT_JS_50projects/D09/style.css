@@ -1,38 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-/* :root {
-    --line-border-fill: #3498db;
-    --line-border-empty: #e0e0e0;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     height: 100vh;
+    margin: 0;
 }
 
-
 main {
-    background-color: #f6f7fb;
+    background-color: rgb(161, 100, 223);
+    color: #fff;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 94vh;
     overflow: hidden;
     margin: 0;
 }
 
+main p {
+    padding: 2rem;
+    font-size: 0.9rem;
+}
 
-.container {
-    text-align: center;
-    z-index: 5;
+#buttons {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.btn {
+    background-color: rebeccapurple;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    min-width: 150px;
+    /* padding: 1.5rem 3rem; */
+    padding: 1.5rem;
+    margin: 1rem;
+    font-family: inherit;
+    cursor: pointer;
 }
 
 
+.btn:hover {
+    opacity: 0.9;
+}
 
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+
+    background-color: purple;
+}
+
+/* J<aurais pu styler le stop avec le btn mais je l'ai fait comme ]a pour deleter facilement */
+#stop {
+    background-color: rebeccapurple;
+    /* opacity: 0; */
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    /* min-width: 150px; */
+    padding: 0.8rem 3rem;
+    /* display: none; */
+    /* padding: 1.5rem; */
+    /* margin: 1rem; */
+    font-family: inherit;
+    cursor: pointer;
+}
+
+#stop:hover {
+    opacity: 0.9;
+}
+
+#stop:focus {
+    outline: none;
+}
+
+#stop:active {
+
+    background-color: purple;
+}
 
 
 
