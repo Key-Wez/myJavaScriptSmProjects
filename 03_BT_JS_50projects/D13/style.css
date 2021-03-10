@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color: #2b88f0;
+}
+
+main {
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 94vh;
+    overflow: hidden;
+    /* margin: 0; */
+    /* padding: 2rem; */
+}
+
+
+h3 {
+    color: #fff;
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.container {
+    width: 500px;
+}
+
+textarea {
+    /* border: none; */
+    /* border: none; */
+    display: block;
+    width: 100%;
+    height: 100px;
+    font-family: inherit;
+    padding: 10px;
+    margin: 0 0 20px;
+    font-size: 1rem;
+}
+
+textarea:focus {
+    border-color: rebeccapurple;
+}
+
+.tag {
+    background-color: #f0932b;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 0 5px 10px 0;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.tag.highlight {
+    background-color: #273c75;
+}
+
+.NB {
+    margin-top: 20px;
+    color: blue;
+}
+
+
+
+
+
+/* ----------------  Navigation breadCrumb ---------- */
+nav {
+    background-color: #f4f4f4;
+    color: #333;
+    overflow: auto;
+    border-bottom: 1px solid #333;
+    /* margin-bottom: 2rem; */
+}
+
+nav a {
+    color: #333;
+}
+
+nav a:hover {
+    font-weight: 700;
+}
+
+nav ol {
+    list-style: none;
+    float: left;
+}
+
+nav ol li {
+    float: left;
+    padding-left: 0.5rem;
+}
+
+nav ol li:not(:last-child)::after {
+    font-weight: bold;
+    color: navy;
+    content: " / ";
+}
+
+.clr {
+    clear: both;
+}
