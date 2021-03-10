@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    height: 100vh;
+
+}
+
+/* Navigation breadCrumb */
+nav {
+    /* background-color: #333; */
+    color: #333;
+    overflow: auto;
+    border-bottom: 1px solid #333;
+    margin-bottom: 2rem;
+    /* display: flex; */
+}
+
+nav a {
+    color: #333;
+}
+
+nav a:hover {
+    font-weight: 700;
+}
+
+nav ol {
+    list-style: none;
+    float: left;
+}
+
+nav ol li {
+    float: left;
+    padding-left: 0.5rem;
+}
+
+nav ol li:not(:last-child)::after {
+    font-weight: bold;
+    color: navy;
+    content: " / ";
+}
+
+.clr {
+    clear: both;
+}
+
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+/* #ProjectList */
+a[href="#"] {
+    pointer-events: none;
+    color: #ccc;
+}
