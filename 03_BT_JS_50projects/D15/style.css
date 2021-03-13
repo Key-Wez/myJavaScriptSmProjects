@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8e44ad;
+    color: #fff;
+    font-family: 'Roboto Mono', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 50px;
+}
+
+.counter {
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+
+
+
+/* ----------------  Media Queries ---------- */
+@media(max-width:580px) {
+    body {
+        flex-direction: column;
+    }
+}
+
+
+/* ----------------  Navigation breadCrumb ---------- */
+nav {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #333;
+    border-bottom: 1px solid #333;
+    padding: 1rem;
+
+}
+
+nav a {
+    color: #333;
+}
+
+nav a:hover {
+    font-weight: 700;
+}
+
+nav ol {
+    list-style: none;
+    display: flex;
+}
+
+nav ol li {
+    padding-left: 0.5rem;
+}
+
+nav ol li:not(:last-child)::after {
+    font-weight: bold;
+    color: navy;
+    padding-left: 0.5rem;
+    content: " / ";
+}
