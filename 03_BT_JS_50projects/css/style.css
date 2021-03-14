@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    /* background: pink; */
+}
+
+.projects {
+    display: flex;
+}
+
+.day {}
+
+
+
+/* #ProjectList */
+a[href="#"] {
+    pointer-events: none;
+    color: #ccc;
+}
+
+main>.container {
+    padding: 60px 15px 0;
+}
