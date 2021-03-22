@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+}
+
+html {
+    transition: all 0.5s ease-in;
+}
+
+html.dark {
+    --primary-color: #fff;
+    --secondary-color: #333;
+}
+
+html.dark {
+    background-color: #111;
+    color: var(--primary-color);
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    /* background-color: var(--primary-color);
+    color: var(--secondary-color); */
+}
+
+.toggle {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 0;
+    border-radius: 4px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 200px;
+    cursor: pointer;
+}
+
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    /* background-color: #f0f0f0; */
+}
+
+.needle {
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 65px;
+    width: 3px;
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in;
+}
+
+.needle.hour {
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.needle.minute {
+    height: 100px;
+    transform: translate(-50%, -100%) rotate(30deg);
+}
+
+.needle.second {
+    height: 100px;
+    transform: translate(-50%, -100%) rotate(30deg);
+    background-color: #e74c3c;
+}
+
+/* .center-point {
+    position: absolute;
+    background-color: var(--secondary-color);
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 3px solid #e74c3c;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.center-point {
+    background-color: #e74c3c;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.center-point::after {
+    content: '';
+    background-color: var(--primary-color);
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.time {
+    font-size: 60px;
+
+}
+
+.date {
+    color: #aaa;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+
+}
+
+.date .circle {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 18px;
+    transition: all 0.5s ease-in;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------------  Navigation breadCrumb ---------- */
+nav {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #333;
+    border-bottom: 1px solid #333;
+    padding: 0.5rem;
+
+}
+
+nav a {
+    color: #333;
+}
+
+nav a:hover {
+    font-weight: 700;
+}
+
+nav ol {
+    list-style: none;
+    display: flex;
+}
+
+nav ol li {
+    padding-left: 0.5rem;
+}
+
+nav ol li:not(:last-child)::after {
+    font-weight: bold;
+    color: navy;
+    padding-left: 0.5rem;
+    content: " / ";
+}
